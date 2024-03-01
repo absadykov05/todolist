@@ -5,7 +5,9 @@ import fav from '../../Assets/starL.png'
 import favR from '../../Assets/starY.png'
 import {useSelector, useDispatch} from 'react-redux'
 import {Item, onChange, addTask, finishTask, deleteTask, starTask} from "../../Redux/Slices/counterSlice";
-import {RootState} from "../../Redux/redux-store";
+
+
+      import {RootState} from "../../Redux/redux-store";
 import {hideMenu, showNewMenu} from "../../Redux/Slices/contextMenuSlice";
 import Menu from "../ContextMenu/Menu";
 import {DateNumber} from "../../Time";
@@ -13,7 +15,7 @@ import {showBlock} from "../../Redux/Slices/sideBlockSlice";
 
 const Home = () => {
     const items = useSelector((state: RootState) => state.counter.items);
-    const text = useSelector((state: RootState) => state.counter.text);
+              const text = useSelector((state: RootState) => state.counter.text);
     const dispatch = useDispatch();
 
     // @ts-ignore

@@ -3,7 +3,7 @@
     grid-template-rows: 1fr 100px;
     grid-template-columns: 1fr;
     height: 100%;
-    background-color: gold;
+    /* background-color: gold; */
 }
 
 .Tasks {
@@ -21,6 +21,7 @@
     background-color: #F7F7F7;
     border-radius: 10px;
     align-items: center;
+    cursor: pointer;
 }
 
 .title_block {
